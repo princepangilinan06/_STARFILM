@@ -1566,6 +1566,51 @@ body {
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
+.about-values {
+  padding: 4rem 8%;
+  text-align: center;
+
+  color: #fff;
+}
+
+.about-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.value-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.value-cards .card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 300px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center; 
+}
+
+.value-cards .card img {
+  width: 80px;  
+  height: 80px;
+  margin: 0 auto 1rem; 
+  display: block;
+}
+
+.value-cards .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-cards .card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 .rates-table th,
 .rates-table td {
     padding: 14px;
@@ -1673,7 +1718,7 @@ footer {
 .survey-section h2 {
   font-size: 28px;
   margin-bottom: 25px;
-  color: #FFD700; /* Gold star color */
+  color: #FFD700; 
 }
 
 .survey-form {
@@ -1791,7 +1836,9 @@ footer {
   border-radius: 10px; 
   flex-shrink: 0;           
 }
-
+.about-values {
+  margin: 30px 0;
+}
 
 /*
    RATES TABLE */
@@ -1962,36 +2009,96 @@ footer {
     width: 25px;
     height: 25px;
   }
-    
-
-}
-
-
-/* tablet only to fix */
-@media (max-width: 768px) {
-  .rates { 
-    padding: 2rem 4%; 
+    .about-values h2 {
+    font-size: 1.7rem;
+  }
+  .value-cards {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .value-cards .card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .value-cards .card img {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+  }
+  .value-cards .card h3 {
+    font-size: 1.3rem;
+  }
+  .value-cards .card p {
+    font-size: 0.95rem;
+  }
+  .about-values h2 {
+    font-size: 1.7rem;
   }
 
-  .rates-table { 
-    width: 100%; 
-    font-size: 0.9rem; 
+  .value-cards {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
 
-  .trailer video { 
-    width: 100%; 
-  }
-
-  footer { 
-    padding: 2rem 3%; 
-  }
-
-  .footer-container { 
-    flex-direction: column; 
-    align-items: center; 
+  .value-cards .card {
+    width: 90%;
+    padding: 1rem;
     text-align: center; 
   }
+
+  .value-cards .card img {
+    width: 70px;   
+    height: 70px;
+    margin: 0 auto 1rem; 
+    display: block;
+  }
+
+  .value-cards .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .value-cards .card p {
+    font-size: 0.95rem;
+  }
+
+
+  .about-values h2 {
+    font-size: 2rem;
+  }
+
+  .value-cards {
+    gap: 1.5rem;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+
+  .value-cards .card {
+    width: 280px;       
+    padding: 1.3rem;
+    text-align: center; 
+  }
+
+  .value-cards .card img {
+    width: 90px;       
+    height: 90px;
+    margin: 0 auto 1rem; 
+    display: block;
+  }
+
+  .value-cards .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .value-cards .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
 }
+
 
 
 /* TABLET */
@@ -2042,12 +2149,73 @@ footer {
         gap: 1rem;
     }
 
+    .about-values {
+  margin: 20px 0;
+}
+
     .footer-icon img {
     padding-top: 10px;
     width: 40px;
     height: 40px;
 
 }
+
+
+
+  .about-values h2 {
+    font-size: 2rem;
+  }
+
+  .value-cards {
+    gap: 1.5rem;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+
+  .value-cards .card {
+    width: 280px;       
+    padding: 1.3rem;
+    text-align: center; 
+  }
+
+  .value-cards .card img {
+    width: 90px;       
+    height: 90px;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+
+  .value-cards .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .value-cards .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-text,
+  .login-container,
+  .login-form,
+  .tagline,
+  .rates-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1rem !important;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 
@@ -2152,31 +2320,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-  .about-text,
-  .login-container,
-  .login-form,
-  .tagline,
-  .rates-table {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 1rem !important;
-  }
-
-  .hero {
-    height: auto;
-    min-height: 60vh;
-    padding: 2rem;
-    background-size: cover;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-   
 
 
 
