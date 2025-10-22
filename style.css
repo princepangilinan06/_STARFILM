@@ -512,9 +512,9 @@ body {
   font-weight: bold;
 }
 
-/* RECENT ACTIVITIES */
 .activities {
   padding: 4rem 8%;
+  text-align: center;
 }
 
 .activities h2 span {
